@@ -58,12 +58,52 @@ Reglas:
 - No hay secretos en un skill ni los habrá — el enmascaramiento en los
   límites es obligatorio.
 
+## Contenido del catálogo
+
+**Trabajo con código:**
+
+| Skill | Descripción |
+|---|---|
+| `code-review-ru` | Revisión de diffs: estilo, errores, riesgos de seguridad |
+| `security-audit-ru` | Pasada rápida de seguridad sobre diff/archivo — clases de problemas OWASP |
+| `bug-triage-ru` | Triaje de un bug: reproducción → localización de la causa → corrección puntual |
+| `test-writer-ru` | Tests para código existente según el comportamiento, con casos límite |
+| `commit-msg-ru` | Mensaje de commit a partir del diff en staging: qué y por qué, no un resumen |
+
+**Documentos** (adaptado de anthropics/skills; los scripts se ejecutan en la máquina del usuario):
+
+| Skill | Descripción |
+|---|---|
+| `docx` | Documentos Word (.docx/.dotx): creación, lectura, edición, tracked changes |
+| `xlsx` | Hojas de cálculo (.xlsx/.csv/.tsv): fórmulas, formato, limpieza de datos |
+| `pptx` | Presentaciones (.pptx/.potx): creación y edición de decks |
+| `pdf` | PDF: lectura y extracción, unir/dividir, formularios, OCR de escaneos |
+
+**Ecosistema del agente:**
+
+| Skill | Descripción |
+|---|---|
+| `mcp-builder` | Construcción de servidores MCP (Python FastMCP / Node SDK) — del diseño de herramientas al empaquetado |
+| `skill-creator` | Creación y mejora de skills, medición de su eficacia (evals) |
+
+**Comunicación y diseño:**
+
+| Skill | Descripción |
+|---|---|
+| `doc-coauthoring` | Coautoría de documentación: iteraciones estructuradas con el usuario |
+| `internal-comms` | Comunicaciones internas: informes de estado, actualizaciones 3P, FAQ, incidentes |
+| `frontend-design` | Diseño visual consciente de UI: estética, tipografía, sin plantillas genéricas |
+
 ## Instalación
 
-Por ahora: clona en `~/.config/berimor/skills/` (o `.berimor/skills/`
-en la raíz del proyecto — los skills del proyecto tienen prioridad sobre
-los globales). El cargador está en desarrollo (consulta la ROADMAP del
-repositorio principal); el formato es estable.
+El catálogo predeterminado está integrado en berimor: desde el chat —
+`/skills add` (el selector mostrará los skills disponibles de este
+repositorio), desde el CLI — `berimor skill install <name>` (por ejemplo
+`berimor skill install code-review-ru`). Cualquier otra fuente:
+`berimor skill install <name> --from <git-url>` o clonación en
+`~/.config/berimor/skills/` (global) o `.berimor/skills/` (proyecto,
+con prioridad sobre los globales). Lista de los skills disponibles del
+catálogo: `berimor skill list --available`.
 
 ## Ejemplo
 

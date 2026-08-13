@@ -57,12 +57,51 @@ Rules:
 - There are no secrets in a skill and never will be — masking at the
   boundaries is mandatory.
 
+## Catalog contents
+
+**Working with code:**
+
+| Skill | Description |
+|---|---|
+| `code-review-ru` | Diff review: style, bugs, security risks |
+| `security-audit-ru` | Quick security pass over a diff/file — OWASP problem classes |
+| `bug-triage-ru` | Bug triage: reproduction → root-cause localization → targeted fix |
+| `test-writer-ru` | Behavior-based tests for existing code, with edge cases |
+| `commit-msg-ru` | Commit message from the staged diff: what and why, not a retelling |
+
+**Documents** (adapted from anthropics/skills; scripts run on the user's machine):
+
+| Skill | Description |
+|---|---|
+| `docx` | Word documents (.docx/.dotx): create, read, edit, tracked changes |
+| `xlsx` | Spreadsheets (.xlsx/.csv/.tsv): formulas, formatting, data cleanup |
+| `pptx` | Presentations (.pptx/.potx): creating and editing decks |
+| `pdf` | PDF: reading and extraction, merge/split, forms, OCR of scans |
+
+**Agent ecosystem:**
+
+| Skill | Description |
+|---|---|
+| `mcp-builder` | Building MCP servers (Python FastMCP / Node SDK) — from tool design to packaging |
+| `skill-creator` | Creating and improving skills, measuring their effectiveness (evals) |
+
+**Communication and design:**
+
+| Skill | Description |
+|---|---|
+| `doc-coauthoring` | Documentation co-authoring: structured iterations with the user |
+| `internal-comms` | Internal communications: status reports, 3P updates, FAQs, incidents |
+| `frontend-design` | Deliberate visual UI design: aesthetics, typography, no cookie-cutter output |
+
 ## Installation
 
-For now: clone into `~/.config/berimor/skills/` (or `.berimor/skills/`
-in the project root — project skills take precedence over global ones).
-The loader is under development (see the ROADMAP in the main repository);
-the format is stable.
+The catalog is built into berimor by default: from chat — `/skills add`
+(a picker will show what's available from this repository), from the CLI —
+`berimor skill install <name>` (e.g. `berimor skill install code-review-ru`).
+Any other source: `berimor skill install <name> --from <git-url>` or cloning
+into `~/.config/berimor/skills/` (global) or `.berimor/skills/` (project,
+takes precedence over global). List what's available in the catalog:
+`berimor skill list --available`.
 
 ## Example
 

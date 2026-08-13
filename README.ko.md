@@ -56,11 +56,50 @@ model_tier: strong  # минимальный класс модели (weak|stron
 - 스킬에는 시크릿이 없으며 앞으로도 없을 것입니다 — 경계에서의 마스킹은
   필수입니다.
 
+## 카탈로그 내용
+
+**코드 작업:**
+
+| 스킬 | 설명 |
+|---|---|
+| `code-review-ru` | diff 리뷰: 스타일, 오류, 보안 리스크 |
+| `security-audit-ru` | diff/파일에 대한 빠른 보안 점검 — OWASP 클래스 문제 |
+| `bug-triage-ru` | 버그 트리아지: 재현 → 원인 파악 → 정밀 수정 |
+| `test-writer-ru` | 기존 코드에 대한 동작 기반 테스트, 경계 사례 포함 |
+| `commit-msg-ru` | staged diff 기반 커밋 메시지: 무엇을, 왜 — 단순 반복 아님 |
+
+**문서** (anthropics/skills에서 각색; 스크립트는 사용자 머신에서 실행됩니다):
+
+| 스킬 | 설명 |
+|---|---|
+| `docx` | Word 문서 (.docx/.dotx): 생성, 읽기, 편집, tracked changes |
+| `xlsx` | 스프레드시트 (.xlsx/.csv/.tsv): 수식, 서식, 데이터 정리 |
+| `pptx` | 프레젠테이션 (.pptx/.potx): 덱 생성 및 편집 |
+| `pdf` | PDF: 읽기 및 추출, 병합/분할, 폼, 스캔 OCR |
+
+**에이전트 생태계:**
+
+| 스킬 | 설명 |
+|---|---|
+| `mcp-builder` | MCP 서버 구축 (Python FastMCP / Node SDK) — 도구 설계부터 패키징까지 |
+| `skill-creator` | 스킬 생성 및 개선, 효과 측정 (evals) |
+
+**커뮤니케이션과 디자인:**
+
+| 스킬 | 설명 |
+|---|---|
+| `doc-coauthoring` | 문서 공동 작성: 사용자와의 구조화된 반복 |
+| `internal-comms` | 내부 커뮤니케이션: 상태 보고서, 3P 업데이트, FAQ, 인시던트 |
+| `frontend-design` | 의도적인 UI 비주얼 디자인: 미학, 타이포그래피, 템플릿 없음 |
+
 ## 설치
 
-현재: `~/.config/berimor/skills/`에 클론하세요(또는 프로젝트 루트의
-`.berimor/skills/` — 프로젝트 스킬이 전역 스킬보다 우선합니다). 로더는
-개발 중입니다(메인 리포지토리의 ROADMAP 참조); 형식은 안정적입니다.
+카탈로그는 기본적으로 berimor에 내장되어 있습니다: 채팅에서는
+`/skills add`(피커가 이 리포지토리의 사용 가능한 항목을 표시),
+CLI에서는 `berimor skill install <name>`
+(예: `berimor skill install code-review-ru`). 다른 소스: `berimor skill install <name> --from <git-url>` 또는 `~/.config/berimor/skills/`(전역) 또는
+`.berimor/skills/`(프로젝트, 전역보다 우선)에 클론. 카탈로그에서
+사용 가능한 목록: `berimor skill list --available`.
 
 ## 예시
 

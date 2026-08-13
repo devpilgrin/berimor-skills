@@ -56,12 +56,50 @@ model_tier: strong  # минимальный класс модели (weak|stron
 - スキルにシークレットは存在せず、今後も存在しません — 境界での
   マスキングは必須です。
 
+## カタログ内容
+
+**コード関連：**
+
+| スキル | 説明 |
+|---|---|
+| `code-review-ru` | diff のレビュー：スタイル、エラー、セキュリティリスク |
+| `security-audit-ru` | diff/ファイルへの迅速なセキュリティチェック — OWASP クラスの問題 |
+| `bug-triage-ru` | バグのトリアージ：再現 → 原因の特定 → ピンポイント修正 |
+| `test-writer-ru` | 既存コードに対する挙動ベースのテスト、エッジケース込み |
+| `commit-msg-ru` | staged diff からのコミットメッセージ：何を・なぜ、言い換えではなく |
+
+**ドキュメント**（anthropics/skills から適応；スクリプトはユーザーのマシンで実行されます）：
+
+| スキル | 説明 |
+|---|---|
+| `docx` | Word 文書（.docx/.dotx）：作成、読み取り、編集、tracked changes |
+| `xlsx` | スプレッドシート（.xlsx/.csv/.tsv）：数式、書式設定、データクリーニング |
+| `pptx` | プレゼンテーション（.pptx/.potx）：デッキの作成と編集 |
+| `pdf` | PDF：読み取りと抽出、結合/分割、フォーム、スキャンの OCR |
+
+**エージェントエコシステム：**
+
+| スキル | 説明 |
+|---|---|
+| `mcp-builder` | MCP サーバーの構築（Python FastMCP / Node SDK）— ツール設計からパッケージングまで |
+| `skill-creator` | スキルの作成と改善、効果測定（evals） |
+
+**コミュニケーションとデザイン：**
+
+| スキル | 説明 |
+|---|---|
+| `doc-coauthoring` | ドキュメントの共同執筆：ユーザーとの構造化された反復 |
+| `internal-comms` | 社内コミュニケーション：ステータスレポート、3P アップデート、FAQ、インシデント |
+| `frontend-design` | 意図的な UI ビジュアルデザイン：美学、タイポグラフィ、定型化なし |
+
 ## インストール
 
-現時点では：`~/.config/berimor/skills/` にクローンしてください
-（またはプロジェクトルートの `.berimor/skills/` — プロジェクトの
-スキルはグローバルより優先されます）。ローダーは開発中です
-（メインリポジトリの ROADMAP を参照）。フォーマットは安定しています。
+カタログはデフォルトで berimor に組み込まれています：チャットからは
+`/skills add`（ピッカーがこのリポジトリの利用可能な項目を表示）、
+CLI からは `berimor skill install <name>`
+（例：`berimor skill install code-review-ru`）。その他のソース：`berimor skill install <name> --from <git-url>`、または `~/.config/berimor/skills/`（グローバル）
+もしくは `.berimor/skills/`（プロジェクト、グローバルより優先）に
+クローン。カタログで利用可能な一覧：`berimor skill list --available`。
 
 ## 例
 
