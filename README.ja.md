@@ -92,6 +92,16 @@ model_tier: strong  # минимальный класс модели (weak|stron
 | `internal-comms` | 社内コミュニケーション：ステータスレポート、3P アップデート、FAQ、インシデント |
 | `frontend-design` | 意図的な UI ビジュアルデザイン：美学、タイポグラフィ、定型化なし |
 
+**クリエイティブと QA**（anthropics/skills から適応、echelon-2）：
+
+| スキル | 説明 |
+|---|---|
+| `canvas-design` | ポスターとカバー（PNG/PDF）：構図、パレット、同梱フォント |
+| `brand-guidelines` | アーティファクトとドキュメント向けのブランドカラーとタイポグラフィ |
+| `theme-factory` | 10 種類の既成デザインテーマ：ドキュメント、スライド、ランディングページ、レポート |
+| `algorithmic-art` | ジェネラティブアート：シード付き p5.js スケッチ + インタラクティブビューア |
+| `webapp-testing` | Playwright による Web アプリの E2E 検証（playwright MCP サーバーが必要。berimor の docs/mcp-servers.md を参照） |
+
 ## インストール
 
 カタログはデフォルトで berimor に組み込まれています：チャットからは

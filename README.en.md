@@ -93,6 +93,16 @@ Rules:
 | `internal-comms` | Internal communications: status reports, 3P updates, FAQs, incidents |
 | `frontend-design` | Deliberate visual UI design: aesthetics, typography, no cookie-cutter output |
 
+**Creative and QA** (adapted from anthropics/skills, echelon-2):
+
+| Skill | Description |
+|---|---|
+| `canvas-design` | Posters and covers (PNG/PDF): composition, palette, bundled fonts |
+| `brand-guidelines` | Brand colors and typography for artifacts and documents |
+| `theme-factory` | 10 ready-made design themes: documents, slides, landing pages, reports |
+| `algorithmic-art` | Generative art: seeded p5.js sketches + interactive viewer |
+| `webapp-testing` | E2E testing of web apps via Playwright (requires the playwright MCP server, see docs/mcp-servers.md in berimor) |
+
 ## Installation
 
 The catalog is built into berimor by default: from chat — `/skills add`

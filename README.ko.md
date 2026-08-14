@@ -92,6 +92,16 @@ model_tier: strong  # минимальный класс модели (weak|stron
 | `internal-comms` | 내부 커뮤니케이션: 상태 보고서, 3P 업데이트, FAQ, 인시던트 |
 | `frontend-design` | 의도적인 UI 비주얼 디자인: 미학, 타이포그래피, 템플릿 없음 |
 
+**크리에이티브와 QA** (anthropics/skills에서 각색, echelon-2):
+
+| 스킬 | 설명 |
+|---|---|
+| `canvas-design` | 포스터와 커버 (PNG/PDF): 구성, 팔레트, 번들 폰트 |
+| `brand-guidelines` | 아티팩트와 문서를 위한 브랜드 컬러와 타이포그래피 |
+| `theme-factory` | 10가지 기성 디자인 테마: 문서, 슬라이드, 랜딩 페이지, 보고서 |
+| `algorithmic-art` | 제너레이티브 아트: 시드 기반 p5.js 스케치 + 인터랙티브 뷰어 |
+| `webapp-testing` | Playwright를 통한 웹 애플리케이션 E2E 검증 (playwright MCP 서버 필요, berimor의 docs/mcp-servers.md 참조) |
+
 ## 설치
 
 카탈로그는 기본적으로 berimor에 내장되어 있습니다: 채팅에서는

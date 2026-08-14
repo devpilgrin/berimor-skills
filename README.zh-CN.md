@@ -89,6 +89,16 @@ model_tier: strong  # минимальный класс модели (weak|stron
 | `internal-comms` | 内部沟通：状态报告、3P 更新、FAQ、事故 |
 | `frontend-design` | 有意识的 UI 视觉设计：美学、排版、拒绝模板化 |
 
+**创意与 QA**（改编自 anthropics/skills，echelon-2）：
+
+| Skill | 描述 |
+|---|---|
+| `canvas-design` | 海报与封面（PNG/PDF）：构图、配色、内置字体 |
+| `brand-guidelines` | 用于制品和文档的品牌配色与排版 |
+| `theme-factory` | 10 套现成设计主题：文档、幻灯片、落地页、报告 |
+| `algorithmic-art` | 生成艺术：带种子（seeded）的 p5.js 草图 + 交互式查看器 |
+| `webapp-testing` | 通过 Playwright 对 Web 应用进行 E2E 检查（需要 playwright MCP 服务器，参见 berimor 的 docs/mcp-servers.md） |
+
 ## 安装
 
 目录默认内置在 berimor 中：在聊天中 —— `/skills add`（选择器会显示

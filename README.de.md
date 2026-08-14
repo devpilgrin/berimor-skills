@@ -94,6 +94,16 @@ Regeln:
 | `internal-comms` | Interne Kommunikation: Statusberichte, 3P-Updates, FAQs, Incidents |
 | `frontend-design` | Bewusstes visuelles UI-Design: Ästhetik, Typografie, ohne Schablonenhaftigkeit |
 
+**Kreativ und QA** (adaptiert aus anthropics/skills, Echelon-2):
+
+| Skill | Beschreibung |
+|---|---|
+| `canvas-design` | Poster und Cover (PNG/PDF): Komposition, Farbpalette, mitgelieferte Schriften |
+| `brand-guidelines` | Markenfarben und Typografie für Artefakte und Dokumente |
+| `theme-factory` | 10 fertige Designthemen: Dokumente, Folien, Landingpages, Berichte |
+| `algorithmic-art` | Generative Kunst: P5.js-Sketches mit Seed + interaktiver Viewer |
+| `webapp-testing` | E2E-Prüfung von Webanwendungen über Playwright (erfordert den playwright MCP-Server, siehe docs/mcp-servers.md in berimor) |
+
 ## Installation
 
 Der Katalog ist standardmäßig in berimor eingebaut: aus dem Chat — `/skills add`
