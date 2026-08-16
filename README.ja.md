@@ -92,6 +92,19 @@ model_tier: strong  # минимальный класс модели (weak|stron
 | `internal-comms` | 社内コミュニケーション：ステータスレポート、3P アップデート、FAQ、インシデント |
 | `frontend-design` | 意図的な UI ビジュアルデザイン：美学、タイポグラフィ、定型化なし |
 
+**エンジニアリングプロセス**（NousResearch/hermes-agent から適応、エシュロン3）：
+
+| スキル | 説明 |
+|---|---|
+| `systematic-debugging` | 根本原因からのデバッグ：再現、切り分け、証拠のある修正 |
+| `test-driven-development` | RED-GREEN-REFACTOR サイクル：コードより先にテスト、実実行で検証 |
+| `plan` | 計画モード：実装前に `.berimor/plans/` へ実行可能な計画を作成 |
+| `spike` | 構築前にアイデアを検証する使い捨て実験 |
+| `simplify-code` | 直近の変更のクリーンアップ：重複、冗長分岐、デッドコード |
+| `requesting-code-review` | 変更のレビュー依頼：diff、コンテキスト、受入基準 |
+| `github-pr-workflow` | gh による PR ライフサイクル：ブランチ、コミット、作成、CI、修正 |
+| `github-issues` | gh による issue 操作：作成、トリアージ、ラベル、アサイン |
+
 **クリエイティブと QA**（anthropics/skills から適応、echelon-2）：
 
 | スキル | 説明 |

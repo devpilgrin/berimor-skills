@@ -92,6 +92,19 @@ model_tier: strong  # минимальный класс модели (weak|stron
 | `internal-comms` | 내부 커뮤니케이션: 상태 보고서, 3P 업데이트, FAQ, 인시던트 |
 | `frontend-design` | 의도적인 UI 비주얼 디자인: 미학, 타이포그래피, 템플릿 없음 |
 
+**엔지니어링 프로세스**(NousResearch/hermes-agent에서 적응, 에셜론-3):
+
+| 스킬 | 설명 |
+|---|---|
+| `systematic-debugging` | 근본 원인부터의 디버깅: 재현, 격리, 증거 기반 수정 |
+| `test-driven-development` | RED-GREEN-REFACTOR 사이클: 코드보다 테스트 먼저, 실제 실행으로 검증 |
+| `plan` | 계획 모드: 구현 전 `.berimor/plans/`에 실행 가능한 계획 작성 |
+| `spike` | 구축 전 아이디어를 검증하는 일회성 실험 |
+| `simplify-code` | 최근 변경 정리: 중복, 불필요한 분기, 데드 코드 |
+| `requesting-code-review` | 변경 리뷰 요청: diff, 컨텍스트, 승인 기준 |
+| `github-pr-workflow` | gh를 통한 PR 수명 주기: 브랜치, 커밋, 오픈, CI, 수정 |
+| `github-issues` | gh를 통한 issue 작업: 생성, 트리아지, 라벨, 할당 |
+
 **크리에이티브와 QA** (anthropics/skills에서 각색, echelon-2):
 
 | 스킬 | 설명 |

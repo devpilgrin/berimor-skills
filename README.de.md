@@ -94,6 +94,19 @@ Regeln:
 | `internal-comms` | Interne Kommunikation: Statusberichte, 3P-Updates, FAQs, Incidents |
 | `frontend-design` | Bewusstes visuelles UI-Design: Ästhetik, Typografie, ohne Schablonenhaftigkeit |
 
+**Engineering-Prozesse** (adaptiert aus NousResearch/hermes-agent, Echelon-3):
+
+| Skill | Beschreibung |
+|---|---|
+| `systematic-debugging` | Debugging ab der Grundursache: Reproduktion, Isolation, belegter Fix |
+| `test-driven-development` | RED-GREEN-REFACTOR-Zyklus: Tests vor dem Code, verifiziert durch echte Läufe |
+| `plan` | Planungsmodus: umsetzbarer Plan in `.berimor/plans/` vor der Implementierung |
+| `spike` | Einmaliges Experiment zur Ideenprüfung vor dem Bau |
+| `simplify-code` | Bereinigung jüngster Änderungen: Duplikate, überflüssige Verzweigungen, toter Code |
+| `requesting-code-review` | Review-Anfrage für Änderungen: Diff, Kontext, Abnahmekriterien |
+| `github-pr-workflow` | PR-Lebenszyklus via gh: Branch, Commit, Öffnen, CI, Korrekturen |
+| `github-issues` | Arbeit mit Issues via gh: Erstellen, Triagieren, Labels, Zuweisen |
+
 **Kreativ und QA** (adaptiert aus anthropics/skills, Echelon-2):
 
 | Skill | Beschreibung |

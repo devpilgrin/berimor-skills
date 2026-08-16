@@ -89,6 +89,19 @@ model_tier: strong  # минимальный класс модели (weak|stron
 | `internal-comms` | 内部沟通：状态报告、3P 更新、FAQ、事故 |
 | `frontend-design` | 有意识的 UI 视觉设计：美学、排版、拒绝模板化 |
 
+**工程流程**（改编自 NousResearch/hermes-agent，第三梯队）：
+
+| 技能 | 描述 |
+|---|---|
+| `systematic-debugging` | 从根因出发的调试：复现、隔离、有据修复 |
+| `test-driven-development` | RED-GREEN-REFACTOR 循环：先写测试，真实运行验证 |
+| `plan` | 规划模式：实现前在 `.berimor/plans/` 中形成可执行计划 |
+| `spike` | 构建前验证想法的一次性实验 |
+| `simplify-code` | 清理近期改动：重复、冗余分支、死代码 |
+| `requesting-code-review` | 请求变更评审：diff、上下文、验收标准 |
+| `github-pr-workflow` | 通过 gh 的 PR 生命周期：分支、提交、开启、CI、修正 |
+| `github-issues` | 通过 gh 处理 issue：创建、分诊、标签、指派 |
+
 **创意与 QA**（改编自 anthropics/skills，echelon-2）：
 
 | Skill | 描述 |
