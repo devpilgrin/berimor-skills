@@ -14,6 +14,8 @@ tools:
   - files.edit
   - files.list
   - files.search
+permissions:
+  - fs-write
 ---
 
 # Skill Creator

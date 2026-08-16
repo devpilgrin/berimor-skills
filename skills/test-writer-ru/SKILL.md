@@ -11,6 +11,9 @@ tools:
   - files.write
   - files.list
   - terminal.exec
+permissions:
+  - fs-write
+  - exec
 model_tier: strong
 ---
 

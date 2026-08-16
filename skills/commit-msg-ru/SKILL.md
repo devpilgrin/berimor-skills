@@ -8,6 +8,8 @@ triggers:
   - "/commit-msg"
 tools:
   - terminal.exec
+permissions:
+  - exec
 model_tier: weak
 ---
 

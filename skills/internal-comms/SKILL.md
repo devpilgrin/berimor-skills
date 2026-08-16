@@ -12,6 +12,8 @@ tools:
   - files.read
   - files.write
   - files.list
+permissions:
+  - fs-write
 license: Complete terms in LICENSE.txt
 ---
 

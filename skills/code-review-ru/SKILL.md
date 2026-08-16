@@ -10,6 +10,8 @@ tools:
   - files.read
   - files.list
   - terminal.exec
+permissions:
+  - exec
 model_tier: strong
 ---
 

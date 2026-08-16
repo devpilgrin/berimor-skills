@@ -13,6 +13,9 @@ tools:
   - files.read
   - files.write
   - terminal.exec
+permissions:
+  - fs-write
+  - exec
 license: Proprietary. LICENSE.txt has complete terms
 ---
 

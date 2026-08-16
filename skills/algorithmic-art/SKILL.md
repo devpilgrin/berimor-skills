@@ -13,6 +13,8 @@ triggers:
 tools:
   - files.read
   - files.write
+permissions:
+  - fs-write
 license: Proprietary. LICENSE.txt has complete terms
 ---
 

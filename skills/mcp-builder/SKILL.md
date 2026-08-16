@@ -15,6 +15,9 @@ tools:
   - files.list
   - files.search
   - terminal.exec
+permissions:
+  - fs-write
+  - exec
 license: Complete terms in LICENSE.txt
 ---
 

@@ -13,6 +13,8 @@ tools:
   - files.write
   - files.edit
   - files.list
+permissions:
+  - fs-write
 ---
 
 # Процесс совместного написания документов

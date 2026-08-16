@@ -13,6 +13,8 @@ tools:
   - files.read
   - files.write
   - files.edit
+permissions:
+  - fs-write
 license: Proprietary. LICENSE.txt has complete terms
 ---
 
