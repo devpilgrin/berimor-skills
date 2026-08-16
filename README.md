@@ -100,6 +100,8 @@ model_tier: strong  # минимальный класс модели (weak|stron
 | `algorithmic-art` | Генеративное искусство: seeded p5.js-скетчи + интерактивный просмотрщик |
 | `webapp-testing` | E2E-проверка веб-приложений через Playwright (требуется playwright MCP-сервер, см. docs/mcp-servers.md berimor) |
 
+**Требование berimor 0.32.0+**: скиллы декларируют `permissions` (net/exec/fs-write/spawn), согласованные с потолком `tools` — `berimor skill lint` и установка из каталога проверяют это fail-closed. Перед публикацией прогоните `berimor skill lint <путь>` и, при желании, `berimor skill review <путь>` (мультимодельное ревью содержимого).
+
 ## Установка
 
 Каталог по умолчанию зашит в berimor: из чата — `/skills add` (пикер

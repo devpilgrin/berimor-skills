@@ -104,6 +104,8 @@ Règles :
 | `algorithmic-art` | Art génératif : sketches p5.js avec seed + visionneuse interactive |
 | `webapp-testing` | Vérification E2E d'applications web via Playwright (nécessite le serveur MCP playwright, voir docs/mcp-servers.md dans berimor) |
 
+**Nécessite berimor 0.32.0+** : les skills déclarent des `permissions` (net/exec/fs-write/spawn) cohérentes avec le plafond `tools` — `berimor skill lint` et l'installation depuis le catalogue l'imposent en fail-closed. Avant publication : `berimor skill lint <chemin>` et, en option, `berimor skill review <chemin>`.
+
 ## Installation
 
 Le catalogue par défaut est intégré à berimor : depuis le chat —

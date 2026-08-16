@@ -102,6 +102,8 @@ model_tier: strong  # минимальный класс модели (weak|stron
 | `algorithmic-art` | 제너레이티브 아트: 시드 기반 p5.js 스케치 + 인터랙티브 뷰어 |
 | `webapp-testing` | Playwright를 통한 웹 애플리케이션 E2E 검증 (playwright MCP 서버 필요, berimor의 docs/mcp-servers.md 참조) |
 
+**berimor 0.32.0+ 필요**: 스킬은 `tools` 상한과 일치하는 `permissions`(net/exec/fs-write/spawn)를 선언합니다 — `berimor skill lint`와 카탈로그 설치가 이를 fail-closed로 강제합니다. 게시 전에 `berimor skill lint <경로>`와 선택적으로 `berimor skill review <경로>`를 실행하십시오.
+
 ## 설치
 
 카탈로그는 기본적으로 berimor에 내장되어 있습니다: 채팅에서는

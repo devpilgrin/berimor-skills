@@ -102,6 +102,8 @@ model_tier: strong  # минимальный класс модели (weak|stron
 | `algorithmic-art` | ジェネラティブアート：シード付き p5.js スケッチ + インタラクティブビューア |
 | `webapp-testing` | Playwright による Web アプリの E2E 検証（playwright MCP サーバーが必要。berimor の docs/mcp-servers.md を参照） |
 
+**berimor 0.32.0 以降が必要**：スキルは `tools` 上限と整合した `permissions`（net/exec/fs-write/spawn）を宣言します — `berimor skill lint` とカタログからのインストールが fail-closed で強制します。公開前に `berimor skill lint <パス>`、任意で `berimor skill review <パス>` を実行してください。
+
 ## インストール
 
 カタログはデフォルトで berimor に組み込まれています：チャットからは

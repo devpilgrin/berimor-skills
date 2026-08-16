@@ -99,6 +99,8 @@ model_tier: strong  # минимальный класс модели (weak|stron
 | `algorithmic-art` | 生成艺术：带种子（seeded）的 p5.js 草图 + 交互式查看器 |
 | `webapp-testing` | 通过 Playwright 对 Web 应用进行 E2E 检查（需要 playwright MCP 服务器，参见 berimor 的 docs/mcp-servers.md） |
 
+**需要 berimor 0.32.0+**：技能须声明与 `tools` 上限一致的 `permissions`（net/exec/fs-write/spawn）——`berimor skill lint` 与目录安装以 fail-closed 方式强制执行。发布前请运行 `berimor skill lint <路径>`，可选 `berimor skill review <路径>`（多模型内容审查）。
+
 ## 安装
 
 目录默认内置在 berimor 中：在聊天中 —— `/skills add`（选择器会显示
